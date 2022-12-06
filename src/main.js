@@ -9,6 +9,7 @@ Vue.config.productionTip = false
 Vue.prototype.$moment = moment;
 
 Vue.prototype.$socket = io(`http://localhost:${process.env.VUE_APP_SOCKET_PORT}`);
+// Vue.prototype.$socket = io(`http://uzgram-socket.devapp.uz:4002`);
 
 new Vue({
   render: h => h(App),

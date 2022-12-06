@@ -1,28 +1,6 @@
 <template>
   <div id="app">
-    <!-- username -->
-    <div class="chat-name">
-      <input type="text" placeholder="Enter the name" v-model="sender">
-    </div>
-    <!-- chat messages -->
-    <div class="chat-list">
-      <div class="chat-list-item" v-for="(m, index) in messages" :key="index"
-      :class="{ active: m.sender === sender}"
-      >
-        <h1>{{ m.sender }}</h1>
-        <span>{{ m.message }}</span>
-        <small>{{ m.time }}</small>
-      </div>
-    </div>
-    <!-- chat control panel -->
-    <div class="chat-control">
-      <form @submit.prevent="sendMessage">
-        <input type="text" placeholder="Type here..." v-model="message">
-        <button type="submit">
-          send
-        </button>
-      </form>
-    </div>
+    
   </div>
 </template>
 
@@ -55,6 +33,7 @@ export default {
   }
 }
 </script>
+
 
 <style>
 #app {
